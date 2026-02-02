@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <h1>Generate Strong Passwords Easily.</h1>
+    <h2>
+      Create and store strong and secure passwords. Try our random password
+      generator, for free.
+    </h2>
+    <div class="card-wrapper">
+      <div class="card">
+        <div>
+          <h3>Customize your new password</h3>
+        </div>
+
+        <div>
+          <p>Password Size</p>
+          <input type="number" id="trueValue" />
+          <button id="btn">submit</button>
+        </div>
+
+        <div>
+          <p>Generated Password</p>
+        </div>
+        <div>
+          <input type="text" readonly id="password-generated" />
+        </div>
+        <br />
+        <div class="button">
+          <button id="copy-password">Copy Password</button>
+          <button
+            id="refresh-password"
+            onclick="document.getElementById('btn').click()"
+          >
+            Refresh Password
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
